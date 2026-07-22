@@ -18,7 +18,7 @@
 
 ## 🌐 在线浏览
 
-本站由 [Quartz v5](https://github.com/jackyzha0/quartz) 自动构建部署，支持关系图谱、双向链接和全文搜索：
+本站由 [Quartz v4](https://github.com/jackyzha0/quartz/tree/v4) 自动构建部署到 GitHub Pages，支持关系图谱、双向链接和全文搜索：
 
 **🔗 [https://LeafDot37.github.io/notes-share/](https://LeafDot37.github.io/notes-share/)**
 
