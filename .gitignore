@@ -1,0 +1,8 @@
+# Ignore PDF files (too large for GitHub)
+*.pdf
+
+# Obsidian config (local only)
+.obsidian/
+
+# Claude config and conversations (local only)
+.claudian/
