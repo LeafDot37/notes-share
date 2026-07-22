@@ -34,15 +34,14 @@ jobs:
           for item in "${{ github.workspace }}"/*; do
             basename=$(basename "$item")
             case "$basename" in
-              quartz.config.ts|quartz.layout.ts|.gitignore|.github)
+              quartz.config.yaml|.gitignore|.github)
                 continue
                 ;;
             esac
             cp -r "$item" /tmp/quartz/content/
           done
           # Copy Quartz config to root (overrides defaults)
-          cp "${{ github.workspace }}/quartz.config.ts" /tmp/quartz/
-          cp "${{ github.workspace }}/quartz.layout.ts" /tmp/quartz/
+          cp "${{ github.workspace }}/quartz.config.yaml" /tmp/quartz/
 
       - name: Install Dependencies
         working-directory: /tmp/quartz

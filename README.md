@@ -16,6 +16,12 @@
 | **Signals and System** | 信号与系统 |
 | **知识图谱构建方法论** | 笔记结构与格式规范 |
 
+## 🌐 在线浏览
+
+本站由 [Quartz v5](https://github.com/jackyzha0/quartz) 自动构建部署，支持关系图谱、双向链接和全文搜索：
+
+**🔗 [https://LeafDot37.github.io/notes-share/](https://LeafDot37.github.io/notes-share/)**
+
 ## 👀 阅读方式
 
 本仓库提供两种阅读模式：
