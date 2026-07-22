@@ -27,18 +27,18 @@ jobs:
           node-version: 22
 
       - name: Clone and Setup Quartz
-        shell: bash
         run: |
           git clone --depth 1 https://github.com/jackyzha0/quartz.git /tmp/quartz
-          # Copy all notes to content (exclude .gitignore and .github)
+          # Copy all notes into content/ (exclude config and git files)
           mkdir -p /tmp/quartz/content
           for item in "${{ github.workspace }}"/*; do
             f=$(basename "$item")
-            case "$f" in .gitignore|.github) continue ;; esac
+            case "$f" in .github|quartz.config.yaml) continue ;; esac
             cp -r "$item" /tmp/quartz/content/
           done
-          # Write a minimal v5 config inline
-          printf 'configuration:\n  baseUrl: LeafDot37.github.io/notes-share\n  enableSPA: true\n  locale: zh-CN\n  ignorePatterns:\n    - "*.pdf"\n' > /tmp/quartz/quartz.config.yaml
+          # Install our config + remove default configs that conflict
+          cp "${{ github.workspace }}/quartz.config.yaml" /tmp/quartz/
+          rm -f /tmp/quartz/quartz.config.ts /tmp/quartz/quartz.ts 2>/dev/null; true
 
       - name: Install Dependencies
         working-directory: /tmp/quartz
