@@ -6,3 +6,8 @@
 
 # Claude config and conversations (local only)
 .claudian/
+
+# Quartz build output
+node_modules/
+public/
+
