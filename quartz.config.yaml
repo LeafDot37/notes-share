@@ -47,42 +47,40 @@ configuration:
         textHighlight: "#b3aa0288"
 
 layout:
-  - component: Head
-  - component: Footer
-    links:
-      GitHub: "https://github.com/LeafDot37/notes-share"
+  head:
+    - component: Head
+  footer:
+    - component: Footer
+      links:
+        GitHub: "https://github.com/LeafDot37/notes-share"
   page:
-    - zone: beforeBody
-      components:
-        - Breadcrumbs
-        - ArticleTitle
-        - ContentMeta
-        - TagList
-    - zone: left
-      components:
-        - PageTitle
-        - MobileOnly(Spacer)
-        - Search
-        - Darkmode
-        - DesktopOnly(Explorer)
-    - zone: right
-      components:
-        - Graph
-        - DesktopOnly(TableOfContents)
-        - Backlinks
+    beforeBody:
+      - Breadcrumbs
+      - ArticleTitle
+      - ContentMeta
+      - TagList
+    left:
+      - PageTitle
+      - MobileOnly(Spacer)
+      - Search
+      - Darkmode
+      - DesktopOnly(Explorer)
+    right:
+      - Graph
+      - DesktopOnly(TableOfContents)
+      - Backlinks
   list:
-    - zone: beforeBody
-      components:
-        - Breadcrumbs
-        - ArticleTitle
-        - ContentMeta
-    - zone: left
-      components:
-        - PageTitle
-        - MobileOnly(Spacer)
-        - Search
-        - Darkmode
-        - DesktopOnly(Explorer)
+    beforeBody:
+      - Breadcrumbs
+      - ArticleTitle
+      - ContentMeta
+    left:
+      - PageTitle
+      - MobileOnly(Spacer)
+      - Search
+      - Darkmode
+      - DesktopOnly(Explorer)
+    right: []
 
 plugins:
   transformers:
