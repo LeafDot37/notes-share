@@ -4,6 +4,8 @@ aliases: [第1章, 回归]
 ---
 # 第1章 回归
 
+> 从线性回归到Softmax的预测模型
+
 ## 本章知识点
 
 - [[Machine Learning|回归]]

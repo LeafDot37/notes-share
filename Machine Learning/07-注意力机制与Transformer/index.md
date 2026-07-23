@@ -4,6 +4,8 @@ aliases: [第7章, 注意力机制与Transformer]
 ---
 # 第7章 注意力机制与Transformer
 
+> 自注意力机制与基于注意力的序列建模
+
 ## 本章知识点
 
 - [[Machine Learning|注意力机制与Transformer]]

@@ -4,6 +4,8 @@ aliases: [第11章, 大语言模型关键技术]
 ---
 # 第11章 大语言模型关键技术
 
+> ChatGPT、DeepSeek等LLM的核心技术原理
+
 ## 本章知识点
 
 - [[Machine Learning|大语言模型关键技术]]

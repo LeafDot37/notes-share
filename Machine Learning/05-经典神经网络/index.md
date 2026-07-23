@@ -4,6 +4,8 @@ aliases: [第5章, 经典神经网络]
 ---
 # 第5章 经典神经网络
 
+> CNN、RNN、LSTM等经典网络结构
+
 ## 本章知识点
 
 - [[Machine Learning|经典神经网络]]

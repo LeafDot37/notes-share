@@ -4,6 +4,8 @@ aliases: [第8章, FFT与DFT]
 ---
 # 第8章 FFT与DFT
 
+> 离散傅里叶变换与其快速算法
+
 ## 本章知识点
 
 - [[Signals and System|FFT与DFT]]

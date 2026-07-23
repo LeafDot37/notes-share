@@ -55,6 +55,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Graph({
       localGraph: {
         enableRadial: true,
+        showTags: false,
+      },
+      globalGraph: {
+        showTags: false,
       },
     }),
     Component.DesktopOnly(Component.TableOfContents()),
