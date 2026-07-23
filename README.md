@@ -73,7 +73,7 @@ Algorithms/notes/
 - **树状结构**：根 → 章节 index → 原子笔记
 - **统一命名**：原子笔记带 `X.Y` 数字前缀
 - **Front Matter**：每篇笔记包含 `created`、`tags` 元数据
-- **自引用禁令**：wiki-link 指向 `index.md`，不指向同名 Hub 文件
+- **自引用禁令**：wiki-link 指向 `index.md` 时须带显示名（如 `[[../index\|学科名]]`），避免图谱中出现无意义的 "index" 节点
 
 ## 🤝 欢迎贡献
 

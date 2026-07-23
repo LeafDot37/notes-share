@@ -31,10 +31,13 @@ export const defaultContentPageLayout: PageLayout = {
         title: "📂 笔记目录",
         folderDefaultState: "collapsed",
         folderClickBehavior: "link",
-        // Use filename (with X.Y prefix) instead of H1 title for display
+        // Show X.Y prefix for atomic notes, keep H1 title for Hub/index files
         mapFn: (node) => {
           if (node.file) {
-            node.displayName = node.name
+            // Only override display for numbered atomic notes (X.Y pattern)
+            if (/^\d+\.\d+ /.test(node.name)) {
+              node.displayName = node.name
+            }
           }
         },
         // Natural number sort: 01, 02, ... and 1.1, 1.2, ...
@@ -84,7 +87,9 @@ export const defaultListPageLayout: PageLayout = {
         folderClickBehavior: "link",
         mapFn: (node) => {
           if (node.file) {
-            node.displayName = node.name
+            if (/^\d+\.\d+ /.test(node.name)) {
+              node.displayName = node.name
+            }
           }
         },
         sortFn: (a, b) => {
