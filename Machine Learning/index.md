@@ -1,10 +1,10 @@
 ---
-title: Machine Learning 知识图谱
+title: Machine Learning
 created: 2026-07-20
 tags: [machine-learning, map-of-content, root]
 ---
 
-# Machine Learning 知识图谱
+# Machine Learning
 
 > 机器学习知识体系总览
 

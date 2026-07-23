@@ -33,6 +33,11 @@ export const defaultContentPageLayout: PageLayout = {
         folderClickBehavior: "collapse",
         mapFn: (node) => {
           if (node.file) {
+            // Hide root-level files (index, README, methodology) from Explorer
+            if (!node.file.slug.includes("/")) {
+              node.displayName = "__HIDDEN__"
+              return
+            }
             // Atomic notes: show X.Y prefix
             if (/^\d+\.\d+ /.test(node.name)) {
               node.displayName = node.name
@@ -45,6 +50,12 @@ export const defaultContentPageLayout: PageLayout = {
               }
             }
           }
+        },
+        // Filter out hidden items and Others folder
+        filterFn: (node) => {
+          if (node.displayName === "__HIDDEN__") return false
+          if (node.name === "Others") return false
+          return true
         },
         sortFn: (a, b) => {
           if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
@@ -92,6 +103,10 @@ export const defaultListPageLayout: PageLayout = {
         folderClickBehavior: "collapse",
         mapFn: (node) => {
           if (node.file) {
+            if (!node.file.slug.includes("/")) {
+              node.displayName = "__HIDDEN__"
+              return
+            }
             if (/^\d+\.\d+ /.test(node.name)) {
               node.displayName = node.name
             }
@@ -102,6 +117,11 @@ export const defaultListPageLayout: PageLayout = {
               }
             }
           }
+        },
+        filterFn: (node) => {
+          if (node.displayName === "__HIDDEN__") return false
+          if (node.name === "Others") return false
+          return true
         },
         sortFn: (a, b) => {
           if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {

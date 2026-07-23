@@ -3,7 +3,7 @@ tags: [signals-and-system, map-of-content, root]
 created: 2026-07-20
 ---
 
-# 信号与系统知识图谱
+# Signals and System
 
 > **Signals and System (信号与系统)** — 从时域到变换域，从连续到离散，系统性地研究信号的表示、变换与系统的分析。
 

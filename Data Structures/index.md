@@ -1,10 +1,10 @@
 ---
-title: Data Structures 知识图谱
+title: Data Structures
 created: 2026-07-20
 tags: [data-structures, map-of-content, root]
 ---
 
-# Data Structures 知识图谱
+# Data Structures
 
 > 数据结构：计算机存储、组织数据的方式
 

@@ -1,10 +1,10 @@
 ---
-title: 算法 知识图谱
+title: Algorithms
 created: 2026-07-20
 tags: [algorithms, map-of-content, root]
 ---
 
-# 算法 知识图谱
+# Algorithms
 
 > 算法设计与分析的知识体系
 

@@ -1,10 +1,10 @@
 ---
-title: CSAPP 知识图谱
+title: CSAPP
 created: 2026-07-20
 tags: [csapp, map-of-content, root]
 ---
 
-# CSAPP 知识图谱
+# CSAPP
 
 > 计算机系统：程序员的视角
 

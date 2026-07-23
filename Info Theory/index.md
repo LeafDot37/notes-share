@@ -1,10 +1,10 @@
 ---
-title: 信息论 知识图谱
+title: Info Theory
 created: 2026-07-20
 tags: [info-theory, map-of-content, root]
 ---
 
-# 信息论 知识图谱
+# Info Theory
 
 > 信息论：通信与信息压缩的数学理论
 
