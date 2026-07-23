@@ -1,4 +1,5 @@
 ---
+title: Machine Learning 知识图谱
 created: 2026-07-20
 tags: [machine-learning, map-of-content, root]
 ---
@@ -11,18 +12,37 @@ tags: [machine-learning, map-of-content, root]
 
 ## 章节导航
 
-| # | 章节 | 核心主题 |
-|---|------|---------|
-| 第1章 | [[01-回归/index|回归]] | 线性回归、逻辑回归、正则化、Softmax |
-| 第2章 | [[02-线性分类器/index|线性分类器]] | 线性判别函数、多分类策略、准则函数 |
-| 第3章 | [[03-支持向量机/index|支持向量机]] | 硬间隔、软间隔、核函数 |
-| 第4章 | [[04-聚类算法/index|聚类算法]] | K-means、层次聚类、评估 |
-| 第5章 | [[05-经典神经网络/index|经典神经网络]] | CNN、RNN、LSTM、GRU、自编码器 |
-| 第6章 | [[06-自监督学习/index|自监督学习]] | BERT、GPT、微调与语境学习 |
-| 第7章 | [[07-注意力机制与Transformer/index|注意力机制与Transformer]] | 自注意力、多头注意力、Seq2Seq、Transformer |
-| 第8章 | [[08-迁移学习/index|迁移学习]] | 微调、多任务学习、领域对抗、零样本 |
-| 第9章 | [[09-强化学习/index|强化学习]] | 价值学习、策略学习、Actor-Critic |
-| 第10章 | [[10-生成模型/index|生成模型]] | GAN、VAE、扩散模型 |
-| 第11章 | [[11-大语言模型关键技术/index|大语言模型关键技术]] | 关键技术、ChatGPT、DeepSeek、RLHF、PPO、GRPO |
+### [[01-回归/index|第1章 回归]]
+线性回归、逻辑回归、正则化、Softmax
+
+### [[02-线性分类器/index|第2章 线性分类器]]
+线性判别函数、多分类策略、准则函数
+
+### [[03-支持向量机/index|第3章 支持向量机]]
+硬间隔、软间隔、核函数
+
+### [[04-聚类算法/index|第4章 聚类算法]]
+K-means、层次聚类、评估
+
+### [[05-经典神经网络/index|第5章 经典神经网络]]
+CNN、RNN、LSTM、GRU、自编码器
+
+### [[06-自监督学习/index|第6章 自监督学习]]
+BERT、GPT、微调与语境学习
+
+### [[07-注意力机制与Transformer/index|第7章 注意力机制与Transformer]]
+自注意力、多头注意力、Seq2Seq、Transformer
+
+### [[08-迁移学习/index|第8章 迁移学习]]
+微调、多任务学习、领域对抗、零样本
+
+### [[09-强化学习/index|第9章 强化学习]]
+价值学习、策略学习、Actor-Critic
+
+### [[10-生成模型/index|第10章 生成模型]]
+GAN、VAE、扩散模型
+
+### [[11-大语言模型关键技术/index|第11章 大语言模型关键技术]]
+关键技术、ChatGPT、DeepSeek、RLHF、PPO、GRPO
 
 [[../index|← 返回 📚 笔记主页]]
