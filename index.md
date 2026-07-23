@@ -19,16 +19,16 @@ tags: [map-of-content, root]
 
 ## 笔记目录
 
-| 科目 | 入口 |
-|------|------|
-| **CSAPP** | [[CSAPP/CSAPP\|深入理解计算机系统]] |
-| **Algorithms** | [[Algorithms/Algorithms\|算法分析与设计]] |
-| **Data Structures** | [[Data Structures/Data Structures\|数据结构]] |
-| **Discrete Math** | [[Discrete Math/Discrete Math\|离散数学]] |
-| **Info Theory** | [[Info Theory/Info Theory\|信息论基础]] |
-| **Machine Learning** | [[Machine Learning/Machine Learning\|机器学习]] |
-| **NLP** | [[NLP/NLP\|自然语言处理]] |
-| **Signals and System** | [[Signals and System/Signals and System\|信号与系统]] |
+| 科目                     | 入口                                               |
+| ---------------------- | ------------------------------------------------ |
+| **CSAPP**              | [[CSAPP/index\|深入理解计算机系统]]                       |
+| **Algorithms**         | [[Algorithms/index\|算法分析与设计]]               |
+| **Data Structures**    | [[Data Structures/index\|数据结构]]        |
+| **Discrete Math**      | [[Discrete Math/index\|离散数学]]            |
+| **Info Theory**        | [[Info Theory/index\|信息论基础]]               |
+| **Machine Learning**   | [[Machine Learning/index\|机器学习]]      |
+| **NLP**                | [[NLP/index\|自然语言处理]]                              |
+| **Signals and System** | [[Signals and System/index\|信号与系统]] |
 
 ## 快速链接
 

@@ -19,3 +19,5 @@ tags: [algorithms, map-of-content, root]
 | 第4章 | [[04-查找/index|查找]] | 顺序/折半/分块/BST/AVL/哈希 |
 | 第5章 | [[05-搜索/index|搜索]] | DFS、BFS、爬山法、Best-First、分支界限 |
 | 第6章 | [[06-排序/index|排序]] | 插入/交换/选择/归并/基数 |
+
+[[../index|← 返回 📚 笔记主页]]

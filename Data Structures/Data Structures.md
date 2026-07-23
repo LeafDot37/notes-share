@@ -11,3 +11,5 @@ tags: [data-structures, map-of-content, root]
 - [[05-栈/index|栈]]
 - [[06-树/index|树]]
 - [[07-图/index|图]]
+
+[[../index|← 返回 📚 笔记主页]]

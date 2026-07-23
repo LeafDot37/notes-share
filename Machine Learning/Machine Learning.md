@@ -24,3 +24,5 @@ tags: [machine-learning, map-of-content, root]
 | 第9章 | [[09-强化学习/index|强化学习]] | 价值学习、策略学习、Actor-Critic |
 | 第10章 | [[10-生成模型/index|生成模型]] | GAN、VAE、扩散模型 |
 | 第11章 | [[11-大语言模型关键技术/index|大语言模型关键技术]] | 关键技术、ChatGPT、DeepSeek、RLHF、PPO、GRPO |
+
+[[../index|← 返回 📚 笔记主页]]

@@ -41,3 +41,5 @@ tags: [discrete-math, map-of-content, root]
 ---
 
 > 本知识库遵循分层结构：根节点 → 章节中心 → 原子笔记，笔记之间通过双向链接组织。
+
+[[../index|← 返回 📚 笔记主页]]
