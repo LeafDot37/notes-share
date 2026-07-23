@@ -26,10 +26,37 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(
+      Component.Explorer({
+        title: "📂 笔记目录",
+        folderDefaultState: "collapsed",
+        folderClickBehavior: "link",
+        // Use filename (with X.Y prefix) instead of H1 title for display
+        mapFn: (node) => {
+          if (node.file) {
+            node.displayName = node.name
+          }
+        },
+        // Natural number sort: 01, 02, ... and 1.1, 1.2, ...
+        sortFn: (a, b) => {
+          if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+            return a.displayName.localeCompare(b.displayName, "zh-CN", {
+              numeric: true,
+              sensitivity: "base",
+            })
+          }
+          if (!a.isFolder && b.isFolder) return 1
+          return -1
+        },
+      }),
+    ),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        enableRadial: true,
+      },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -47,7 +74,28 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(
+      Component.Explorer({
+        title: "📂 笔记目录",
+        folderDefaultState: "collapsed",
+        folderClickBehavior: "link",
+        mapFn: (node) => {
+          if (node.file) {
+            node.displayName = node.name
+          }
+        },
+        sortFn: (a, b) => {
+          if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+            return a.displayName.localeCompare(b.displayName, "zh-CN", {
+              numeric: true,
+              sensitivity: "base",
+            })
+          }
+          if (!a.isFolder && b.isFolder) return 1
+          return -1
+        },
+      }),
+    ),
   ],
   right: [],
 }

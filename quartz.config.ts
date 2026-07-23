@@ -9,7 +9,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "zh-CN",
     baseUrl: "LeafDot37.github.io/notes-share",
-    ignorePatterns: ["private", "templates", ".obsidian", ".claudian", "*.pdf"],
+    ignorePatterns: ["private", "templates", ".obsidian", ".claudian", "*.pdf", "**/notes/**"],
     defaultDateType: "created",
     theme: {
       cdnCaching: true,
