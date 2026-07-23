@@ -32,4 +32,4 @@ aliases: [第4章, 处理器体系结构]
 
 ---
 
-[[CSAPP|← 返回 CSAPP 总览]]
+[[../index|← 返回 CSAPP 总览]]

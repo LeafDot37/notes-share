@@ -8,7 +8,7 @@ aliases: [第8章, FFT与DFT]
 
 ## 本章知识点
 
-- [[Signals and System|FFT与DFT]]
+- [[../index|FFT与DFT]]
 - [[08-FFT与DFT/8.1 DFT离散傅里叶变换|DFT离散傅里叶变换]]
 - [[08-FFT与DFT/8.2 FFT快速傅里叶变换|FFT快速傅里叶变换]]
 - [[08-FFT与DFT/8.3 信号流图|信号流图]]

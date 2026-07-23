@@ -34,4 +34,4 @@ aliases: [第6章, 存储器层次结构]
 
 ---
 
-[[CSAPP|← 返回 CSAPP 总览]]
+[[../index|← 返回 CSAPP 总览]]

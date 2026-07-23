@@ -16,4 +16,4 @@ aliases: [第1章, 计算机系统漫游]
 
 ---
 
-[[CSAPP|← 返回 CSAPP 总览]]
+[[../index|← 返回 CSAPP 总览]]

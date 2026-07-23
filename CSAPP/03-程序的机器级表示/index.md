@@ -36,4 +36,4 @@ aliases: [第3章, 程序的机器级表示]
 
 ---
 
-[[CSAPP|← 返回 CSAPP 总览]]
+[[../index|← 返回 CSAPP 总览]]

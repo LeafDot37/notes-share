@@ -9,7 +9,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "zh-CN",
     baseUrl: "LeafDot37.github.io/notes-share",
-    ignorePatterns: ["private", "templates", ".obsidian", ".claudian", "*.pdf", "**/notes/**"],
+    ignorePatterns: ["private", "templates", ".obsidian", ".claudian", "*.pdf", "**/notes/**", "**/.claude/**"],
     defaultDateType: "created",
     theme: {
       cdnCaching: true,
@@ -69,7 +69,6 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,

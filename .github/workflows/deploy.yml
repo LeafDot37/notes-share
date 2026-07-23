@@ -36,6 +36,18 @@ jobs:
             case "$f" in .github|quartz.config.ts|quartz.layout.ts) continue ;; esac
             cp -r "$item" /tmp/quartz/content/
           done
+          # Remove Hub files: keep only index.md and numbered notes (X.Y) from subject/chapter dirs
+          find /tmp/quartz/content -maxdepth 3 -name "*.md" ! -name "index.md" ! -name "README.md" ! -name "知识图谱构建方法论.md" | while read f; do
+            basename=$(basename "$f" .md)
+            # Keep numbered notes like "1.1 复杂度分析.md"
+            if echo "$basename" | grep -qE '^[0-9]+\.[0-9]+ '; then
+              continue
+            fi
+            # Also keep .claude/ files
+            case "$f" in */.claude/*) continue ;; esac
+            echo "Removing Hub duplicate: $f"
+            rm "$f"
+          done
           # Override default config with ours
           cp "${{ github.workspace }}/quartz.config.ts" /tmp/quartz/
           cp "${{ github.workspace }}/quartz.layout.ts" /tmp/quartz/
