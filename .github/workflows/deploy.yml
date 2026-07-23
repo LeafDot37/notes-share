@@ -38,13 +38,9 @@ jobs:
             -not -name "quartz.config.ts" \
             -not -name "quartz.layout.ts" \
             -exec cp -r {} /tmp/quartz/content/ \;
-          # Remove Hub files: keep only index.md and numbered notes (X.Y) from subject/chapter dirs
-          find /tmp/quartz/content -maxdepth 3 -name "*.md" ! -name "index.md" ! -name "README.md" ! -name "知识图谱构建方法论.md" -print0 | while IFS= read -r -d '' f; do
-            basename=$(basename "$f" .md)
-            if echo "$basename" | grep -qE '^[0-9]+\.[0-9]+ '; then
-              continue
-            fi
-            echo "Removing Hub duplicate: $f"
+          # Remove index.md files from subject/chapter dirs (keep only Hub and numbered notes)
+          find /tmp/quartz/content -mindepth 2 -name "index.md" -print0 | while IFS= read -r -d '' f; do
+            echo "Removing index: $f"
             rm "$f"
           done
           # Override default config with ours

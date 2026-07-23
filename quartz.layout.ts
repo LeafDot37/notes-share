@@ -38,16 +38,9 @@ export const defaultContentPageLayout: PageLayout = {
               node.displayName = "__HIDDEN__"
               return
             }
-            // Atomic notes: show X.Y prefix
+            // Atomic notes: show X.Y prefix (Hubs use their H1 title by default)
             if (/^\d+\.\d+ /.test(node.name)) {
               node.displayName = node.name
-            }
-            // Index files: derive name from parent directory
-            if (node.name === "index" && node.file.slug) {
-              const parts = node.file.slug.split("/")
-              if (parts.length >= 2) {
-                node.displayName = parts[parts.length - 2].replace(/^\d{1,2}-/, "")
-              }
             }
           }
         },
@@ -109,12 +102,6 @@ export const defaultListPageLayout: PageLayout = {
             }
             if (/^\d+\.\d+ /.test(node.name)) {
               node.displayName = node.name
-            }
-            if (node.name === "index" && node.file.slug) {
-              const parts = node.file.slug.split("/")
-              if (parts.length >= 2) {
-                node.displayName = parts[parts.length - 2].replace(/^\d{1,2}-/, "")
-              }
             }
           }
         },
