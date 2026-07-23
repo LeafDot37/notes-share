@@ -1,4 +1,5 @@
 ---
+title: 第1章 计算机系统漫游
 created: 2026-07-20
 tags: [csapp, moc, chapter1]
 aliases: [第1章, 计算机系统漫游]

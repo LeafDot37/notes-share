@@ -1,4 +1,5 @@
 ---
+title: 第6章 存储器层次结构
 created: 2026-07-20
 tags: [csapp, moc, chapter6]
 aliases: [第6章, 存储器层次结构]

@@ -1,4 +1,5 @@
 ---
+title: 第5章 优化程序性能
 created: 2026-07-20
 tags: [csapp, moc, chapter5]
 aliases: [第5章, 优化程序性能]

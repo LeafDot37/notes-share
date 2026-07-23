@@ -1,4 +1,5 @@
 ---
+title: NLP 知识图谱
 created: 2026-07-23
 tags: [nlp, map-of-content, root]
 ---

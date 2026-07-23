@@ -1,4 +1,5 @@
 ---
+title: 第2章 信息的表示和处理
 created: 2026-07-20
 tags: [csapp, moc, chapter2]
 aliases: [第2章, 信息的表示和处理]

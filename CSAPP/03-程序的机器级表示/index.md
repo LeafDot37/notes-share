@@ -1,4 +1,5 @@
 ---
+title: 第3章 程序的机器级表示
 created: 2026-07-20
 tags: [csapp, moc, chapter3]
 aliases: [第3章, 程序的机器级表示]

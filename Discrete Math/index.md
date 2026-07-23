@@ -1,4 +1,5 @@
 ---
+title: 离散数学
 tags: [discrete-math, map-of-content, root]
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: 第9章 虚拟内存
 created: 2026-07-20
 tags: [csapp, moc, chapter9]
 aliases: [第9章, 虚拟内存]

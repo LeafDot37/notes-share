@@ -1,4 +1,5 @@
 ---
+title: 📚 Study Notes
 created: 2026-07-22
 tags: [map-of-content, root]
 ---

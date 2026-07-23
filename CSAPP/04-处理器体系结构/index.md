@@ -1,4 +1,5 @@
 ---
+title: 第4章 处理器体系结构
 created: 2026-07-20
 tags: [csapp, moc, chapter4]
 aliases: [第4章, 处理器体系结构]
