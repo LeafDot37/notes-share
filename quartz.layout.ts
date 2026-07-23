@@ -30,7 +30,7 @@ export const defaultContentPageLayout: PageLayout = {
       Component.Explorer({
         title: "📂 笔记目录",
         folderDefaultState: "collapsed",
-        folderClickBehavior: "link",
+        folderClickBehavior: "collapse",
         // Use filename (with X.Y prefix) instead of H1 title for display
         mapFn: (node) => {
           if (node.file) {
@@ -78,7 +78,7 @@ export const defaultListPageLayout: PageLayout = {
       Component.Explorer({
         title: "📂 笔记目录",
         folderDefaultState: "collapsed",
-        folderClickBehavior: "link",
+        folderClickBehavior: "collapse",
         mapFn: (node) => {
           if (node.file) {
             node.displayName = node.name
