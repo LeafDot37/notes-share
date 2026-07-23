@@ -29,22 +29,21 @@ jobs:
       - name: Clone Quartz v4 (stable) and setup content
         run: |
           git clone --depth 1 --branch v4 https://github.com/jackyzha0/quartz.git /tmp/quartz
-          # Copy all notes into content/ (exclude config, git files)
+          # Copy all notes into content/ (handle spaces in filenames)
           mkdir -p /tmp/quartz/content
-          for item in "${{ github.workspace }}"/*; do
-            f=$(basename "$item")
-            case "$f" in .github|quartz.config.ts|quartz.layout.ts) continue ;; esac
-            cp -r "$item" /tmp/quartz/content/
-          done
+          find "${{ github.workspace }}" -maxdepth 1 \
+            -not -name "." \
+            -not -name ".git" \
+            -not -name ".github" \
+            -not -name "quartz.config.ts" \
+            -not -name "quartz.layout.ts" \
+            -exec cp -r {} /tmp/quartz/content/ \;
           # Remove Hub files: keep only index.md and numbered notes (X.Y) from subject/chapter dirs
-          find /tmp/quartz/content -maxdepth 3 -name "*.md" ! -name "index.md" ! -name "README.md" ! -name "知识图谱构建方法论.md" | while read f; do
+          find /tmp/quartz/content -maxdepth 3 -name "*.md" ! -name "index.md" ! -name "README.md" ! -name "知识图谱构建方法论.md" -print0 | while IFS= read -r -d '' f; do
             basename=$(basename "$f" .md)
-            # Keep numbered notes like "1.1 复杂度分析.md"
             if echo "$basename" | grep -qE '^[0-9]+\.[0-9]+ '; then
               continue
             fi
-            # Also keep .claude/ files
-            case "$f" in */.claude/*) continue ;; esac
             echo "Removing Hub duplicate: $f"
             rm "$f"
           done

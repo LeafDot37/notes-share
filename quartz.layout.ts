@@ -30,17 +30,22 @@ export const defaultContentPageLayout: PageLayout = {
       Component.Explorer({
         title: "📂 笔记目录",
         folderDefaultState: "collapsed",
-        folderClickBehavior: "link",
-        // Show X.Y prefix for atomic notes, keep H1 title for Hub/index files
+        folderClickBehavior: "collapse",
         mapFn: (node) => {
           if (node.file) {
-            // Only override display for numbered atomic notes (X.Y pattern)
+            // Atomic notes: show X.Y prefix
             if (/^\d+\.\d+ /.test(node.name)) {
               node.displayName = node.name
             }
+            // Index files: derive name from parent directory
+            if (node.name === "index" && node.file.slug) {
+              const parts = node.file.slug.split("/")
+              if (parts.length >= 2) {
+                node.displayName = parts[parts.length - 2].replace(/^\d{1,2}-/, "")
+              }
+            }
           }
         },
-        // Natural number sort: 01, 02, ... and 1.1, 1.2, ...
         sortFn: (a, b) => {
           if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
             return a.displayName.localeCompare(b.displayName, "zh-CN", {
@@ -84,11 +89,17 @@ export const defaultListPageLayout: PageLayout = {
       Component.Explorer({
         title: "📂 笔记目录",
         folderDefaultState: "collapsed",
-        folderClickBehavior: "link",
+        folderClickBehavior: "collapse",
         mapFn: (node) => {
           if (node.file) {
             if (/^\d+\.\d+ /.test(node.name)) {
               node.displayName = node.name
+            }
+            if (node.name === "index" && node.file.slug) {
+              const parts = node.file.slug.split("/")
+              if (parts.length >= 2) {
+                node.displayName = parts[parts.length - 2].replace(/^\d{1,2}-/, "")
+              }
             }
           }
         },
