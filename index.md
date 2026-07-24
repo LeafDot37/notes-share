@@ -22,18 +22,18 @@ tags: [map-of-content, root]
 
 | 科目 | 入口 |
 |------|------|
-| **CSAPP** | [[CSAPP/CSAPP\|CSAPP]] |
-| **Algorithms** | [[Algorithms/Algorithms\|Algorithms]] |
-| **Data Structures** | [[Data Structures/Data Structures\|Data Structures]] |
-| **Discrete Math** | [[Discrete Math/Discrete Math\|Discrete Math]] |
-| **Info Theory** | [[Info Theory/Info Theory\|Info Theory]] |
-| **Machine Learning** | [[Machine Learning/Machine Learning\|Machine Learning]] |
-| **NLP** | [[NLP/NLP\|NLP]] |
-| **Signals and System** | [[Signals and System/Signals and System\|Signals and System]] |
+| **CSAPP** | [[CSAPP/CSAPP|CSAPP]] |
+| **Algorithms** | [[Algorithms/Algorithms|Algorithms]] |
+| **Data Structures** | [[Data Structures/Data Structures|Data Structures]] |
+| **Discrete Math** | [[Discrete Math/Discrete Math|Discrete Math]] |
+| **Info Theory** | [[Info Theory/Info Theory|Info Theory]] |
+| **Machine Learning** | [[Machine Learning/Machine Learning|Machine Learning]] |
+| **NLP** | [[NLP/NLP|NLP]] |
+| **Signals and System** | [[Signals and System/Signals and System|Signals and System]] |
 
 ## 快速链接
 
-- [[知识图谱构建方法论\|贡献者指南 · 笔记规范]]
+- [[知识图谱构建方法论|贡献者指南 · 笔记规范]]
 - [GitHub 仓库](https://github.com/LeafDot37/notes-share)
 
 ---
