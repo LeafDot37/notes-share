@@ -12,3 +12,7 @@ aliases: [第7章, 注意力机制与Transformer]
 - [[Machine Learning/07-注意力机制与Transformer/7.4 Transformer架构|7.4 Transformer架构]]
 - [[Machine Learning/07-注意力机制与Transformer/7.5 Transformer编码器|7.5 Transformer编码器]]
 - [[Machine Learning/07-注意力机制与Transformer/7.6 Transformer解码器|7.6 Transformer解码器]]
+
+---
+
+[[../Machine Learning|← 返回 Machine Learning 总览]]
