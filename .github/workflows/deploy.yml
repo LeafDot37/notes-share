@@ -29,15 +29,14 @@ jobs:
       - name: Clone Quartz v4 (stable) and setup content
         run: |
           git clone --depth 1 --branch v4 https://github.com/jackyzha0/quartz.git /tmp/quartz
-          # Copy all notes into content/ (handle spaces in filenames)
+          # Copy only the contents of the repo into content/, NOT the repo dir itself
           mkdir -p /tmp/quartz/content
-          find "${{ github.workspace }}" -maxdepth 1 \
-            -not -name "." \
-            -not -name ".*" \
-            -not -name ".github" \
-            -not -name "quartz.config.ts" \
-            -not -name "quartz.layout.ts" \
-            -exec cp -r {} /tmp/quartz/content/ \;
+          for item in "${{ github.workspace }}"/* "${{ github.workspace }}"/.[!.]*; do
+            [ -e "$item" ] || continue
+            f=$(basename "$item")
+            case "$f" in .|..|.git|.github|quartz.config.ts|quartz.layout.ts) continue ;; esac
+            cp -r "$item" /tmp/quartz/content/
+          done
           # Remove index.md files from subject/chapter dirs (keep only Hub and numbered notes)
           find /tmp/quartz/content -mindepth 2 -name "index.md" -print0 | while IFS= read -r -d '' f; do
             echo "Removing index: $f"
