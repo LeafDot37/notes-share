@@ -14,22 +14,22 @@ tags: [map-of-content, root]
 
 - 🔍 **全文搜索** — 使用左侧搜索框快速查找知识点
 - 🗺️ **关系图谱** — 右侧图谱展示笔记间的关联，可拖拽缩放
-- 📂 **左侧导航** — 点击章节目录直达 Hub 页面，展开可查看具体知识点
+- 📂 **左侧导航** — 点击学科/章节目录直达，展开可查看具体知识点
 - ⚠️ **若页内链接出现 404**，请使用左侧导航栏重新定位目标页面
 - 📱 **移动端** — 自动适配手机屏幕
 
 ## 笔记目录
 
-| 科目                     | 入口                                               |
-| ---------------------- | ------------------------------------------------ |
-| **CSAPP**              | [[CSAPP/index\|CSAPP]] |
-| **Algorithms**         | [[Algorithms/index\|Algorithms]] |
-| **Data Structures**    | [[Data Structures/index\|Data Structures]] |
-| **Discrete Math**      | [[Discrete Math/index\|Discrete Math]] |
-| **Info Theory**        | [[Info Theory/index\|Info Theory]] |
-| **Machine Learning**   | [[Machine Learning/index\|Machine Learning]] |
-| **NLP**                | [[NLP/index\|NLP]] |
-| **Signals and System** | [[Signals and System/index\|Signals and System]] |
+| 科目 | 入口 |
+|------|------|
+| **CSAPP** | [[CSAPP/CSAPP\|CSAPP]] |
+| **Algorithms** | [[Algorithms/Algorithms\|Algorithms]] |
+| **Data Structures** | [[Data Structures/Data Structures\|Data Structures]] |
+| **Discrete Math** | [[Discrete Math/Discrete Math\|Discrete Math]] |
+| **Info Theory** | [[Info Theory/Info Theory\|Info Theory]] |
+| **Machine Learning** | [[Machine Learning/Machine Learning\|Machine Learning]] |
+| **NLP** | [[NLP/NLP\|NLP]] |
+| **Signals and System** | [[Signals and System/Signals and System\|Signals and System]] |
 
 ## 快速链接
 
