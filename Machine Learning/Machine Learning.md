@@ -33,15 +33,15 @@ BERT、GPT、微调与语境学习
 自注意力、多头注意力、Seq2Seq、Transformer
 
 ### [[Machine Learning/08-迁移学习/迁移学习|第8章 迁移学习]]
-微调、多任务学习、领域对抗、零样本
+微调、多任务学习、领域对抗、零样本、自学习、领域泛化
 
 ### [[Machine Learning/09-强化学习/强化学习|第9章 强化学习]]
-价值学习、策略学习、Actor-Critic
+价值学习、策略学习、Actor-Critic、RLHF、PPO、GRPO
 
 ### [[Machine Learning/10-生成模型/生成模型|第10章 生成模型]]
 GAN、VAE、扩散模型
 
 ### [[Machine Learning/11-大语言模型关键技术/大语言模型关键技术|第11章 大语言模型关键技术]]
-关键技术、ChatGPT、DeepSeek、RLHF、PPO、GRPO
+关键技术、ChatGPT、DeepSeek、安全合规
 
 [[../index|← 返回 📚 笔记主页]]
