@@ -14,6 +14,10 @@
 | **Machine Learning** | 机器学习 |
 | **NLP** | 自然语言处理 |
 | **Signals and System** | 信号与系统 |
+| **Java Basics** | Java 基础 |
+| **Java Advanced** | Java 进阶 |
+| **Design Patterns** | 设计模式 |
+| **Software Testing** | 软件测试 |
 | **知识图谱构建方法论** | 笔记结构与格式规范 |
 
 ## 👀 阅读方式

@@ -30,6 +30,10 @@ tags: [map-of-content, root]
 | **Machine Learning** | [[Machine Learning/Machine Learning|Machine Learning]] |
 | **NLP** | [[NLP/NLP|NLP]] |
 | **Signals and System** | [[Signals and System/Signals and System|Signals and System]] |
+| **Java Basics** | [[Java Basics/Java Basics|Java Basics]] |
+| **Java Advanced** | [[Java Advanced/Java Advanced|Java Advanced]] |
+| **Design Patterns** | [[Design Patterns/Design Patterns|Design Patterns]] |
+| **Software Testing** | [[Software Testing/Software Testing|Software Testing]] |
 
 ## 快速链接
 
